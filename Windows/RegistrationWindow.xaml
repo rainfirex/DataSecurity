@@ -1,0 +1,22 @@
+﻿<Window x:Name="frmRegistration" x:Class="DataSecurity.Windows.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataSecurity.Windows"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="521.053" Width="485" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Loaded="frmRegistration_Loaded" KeyDown="frmRegistration_KeyDown" Icon="/DataSecurity;component/Files/registration.png">
+    <Grid>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Padding="8" FontSize="18" Margin="71,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="334"/>
+        <Label Content="Имя пользователя" HorizontalAlignment="Left" FontSize="18" Margin="71,29,0,0" VerticalAlignment="Top" Width="290"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Padding="8" FontSize="18" Margin="71,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="334"/>
+        <Label Content="Почтовый адрес" HorizontalAlignment="Left" FontSize="18" Margin="71,123,0,0" VerticalAlignment="Top" Width="290"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" FontSize="18" Margin="71,214,0,0" VerticalAlignment="Top" Width="290"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="71,252,0,0" FontSize="18" Padding="8" VerticalAlignment="Top" Width="334" />
+        <Label Content="Пароль еще раз" HorizontalAlignment="Left" FontSize="18" Margin="71,304,0,0" VerticalAlignment="Top" Width="290"/>
+        <PasswordBox x:Name="txtRePassword" HorizontalAlignment="Left" Margin="71,340,0,0" FontSize="18" Padding="8" VerticalAlignment="Top" Width="334" />
+        <Button x:Name="btnRegistration" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="26,418,0,0" VerticalAlignment="Top" Width="213" Height="49" FontSize="18" Click="btnRegistration_Click" IsDefault="True"/>
+        <Button x:Name="btnClose" Content="Закрыть" HorizontalAlignment="Left" Margin="315,418,0,0" VerticalAlignment="Top" Width="124" Height="49" FontSize="18" Click="btnClose_Click"/>
+
+    </Grid>
+</Window>
